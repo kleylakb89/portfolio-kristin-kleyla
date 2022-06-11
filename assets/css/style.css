@@ -7,17 +7,27 @@
     --shadow: rgba(128, 128, 128, .5);
 }
 
+body {
+    overflow-x: hidden;
+}
+
 nav {
     background-color: var(--sapphire);
     padding: 1%;
 }
 
-nav a {
+nav a, #contact a, .git, #links a {
     text-decoration: none;
     color: var(--purple);
     font-family: 'Dosis', sans-serif;
     font-size: 20px;
     font-weight: bolder;
+}
+
+nav a:hover, #links a:hover {
+    color: var(--beige);
+    transform: scale(1.2);
+    transition: all 250ms ease;
 }
 
 #titles {
@@ -42,6 +52,7 @@ header img {
 h1 {
     font-family: 'Permanent Marker', cursive;
     color: var(--purple);
+    font-size: 45px;
 }
 
 #titles h2, #titles a {
@@ -50,23 +61,32 @@ h1 {
     font-size: 30px;
 }
 
+#titles a:hover {
+    text-shadow: 2px 2px 2px var(--shadow);
+}
+
 h3 {
     font-family: 'Permanent Marker', cursive;
     color: var(--purple);
+    font-size: 35px;
 }
 
 #links div {
     margin-bottom: 5%;
+    background-color: var(--sapphire);
+    padding: 16px;
 }
 
-#links a {
-    text-decoration: none;
-    font-family: 'Dosis', sans-serif;
-    color: var(--purple);
+#about p, #about ul, #projects p, #projects ul, #contact p {
+    font-family: 'Didact Gothic', sans-serif;
     font-size: 20px;
-    font-weight: bolder;
-    background-color: var(--sapphire);
-    padding: 8px;
+}
+
+.git:hover {
+    transform: skew(-20deg);
+    transition: all 250ms ease;
+    color: var(--grape);
+    text-shadow: 2px 2px 2px var(--shadow);
 }
 
 @counter-style arrow {
@@ -88,15 +108,34 @@ ul {
 #about p {
     border-right: 2px solid var(--red);
     border-top: 2px solid var(--red);
+    padding: 8px;
+}
+
+#projects h3 {
+    border-bottom: 2px solid var(--red);
+    margin: 0 auto;
+    padding-top: 24px;
 }
 
 #projects img {
     width: 80%;
     border: 6px solid var(--sapphire);
+    border-radius: 16px;
 }
 
-h4, h5 {
+#projects img:hover {
+    border: 6px solid var(--grape);
+    transition: all 250ms ease;
+}
+
+h4 {
     font-family: 'Satisfy', cursive;
+    font-size: 35px;
+}
+
+h5 {
+    font-family: 'Satisfy', cursive;
+    font-size: 25px;
 }
 
 .single {
@@ -117,9 +156,25 @@ h4, h5 {
     border-bottom: 2px solid var(--red);
 }
 
-.git {
-    text-decoration: none;
-    font-family: 'Dosis', sans-serif;
+#contact div {
+    margin: 0 auto;
+    font-family: 'Didact Gothic', sans-serif;
     color: var(--purple);
     font-size: 20px;
+    font-weight: bolder;
+}
+
+#contact div {
+    padding-bottom: 16px;
+}
+
+footer {
+    background-color: var(--sapphire);
+    padding-top: 8px;
+}
+
+#mail:hover, #linked:hover {
+    color: var(--sapphire);
+    transform: scale(1.2);
+    transition: all 250ms ease;
 }
