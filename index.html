@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Inconsolata:wght@600&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Inconsolata:wght@600&family=Permanent+Marker&family=Satisfy&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
@@ -34,77 +34,95 @@
 
     <main>
         <section class="row" id="links">
-            <h3>Relevant Links</h3>
-            <a href="https://drive.google.com/file/d/1flUCK9yhs9T64FfWtCWDmsApi38M5XU3/view?usp=sharing" target="_blank">Resume</a>
-            <a href="https://github.com/kleylakb89" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/kristin-kleyla-91b3a9239/" target="_blank">LinkedIn</a>
+            <h3 class="col-12 text-center">Relevant Links</h3>
+            <div class="row d-flex">
+                <a href="https://drive.google.com/file/d/1flUCK9yhs9T64FfWtCWDmsApi38M5XU3/view?usp=sharing" target="_blank" class="col-12 col-md-6 text-center">Resume</a>
+                <a href="https://www.linkedin.com/in/kristin-kleyla-91b3a9239/" target="_blank" class="col-12 col-md-6 text-center">LinkedIn</a>
+                <a href="https://github.com/kleylakb89" target="_blank" class="col-12 text-center">GitHub</a>
+            </div>
         </section>
 
-        <section class="row" id="about">
-            <h3>My Style</h3>
-            <p class="col-12 text-center">Software developer with experience leading teams up to twenty people to maximize efficiency and oversee collaborative creative environments. Previous experience includes planning and launching a private business that involved resource and time management, customer service skills, and active problem-solving. Maintains a high standard of work ethic and self-teaching. Currently enrolled in the Full Stack Web Development course at UNC Charlotte Boot Camp, set to receive a certificate in August, 2022 for front and back-end development including HTML5, JavaScript, and APIs. Excited to apply skills in problem-solving and leadership to software development while continuing to learn and flourish.</p>
-            <h3>Technical Skills</h3>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>APIs</li>
-                <li>Bootstrap</li>
-            </ul>
+        <section class="row d-flex text-center" id="about">
+            <div class="col-12 col-md-8">
+                <h3 class="col-12">My Style</h3>
+                <p class="col-12 text-center">I'm a software developer with experience leading teams up to twenty people to maximize efficiency and oversee collaborative creative environments. My previous experience includes planning and launching a private business that involved resource and time management, customer service skills, and active problem-solving. I maintain a high standard of work ethic and self-teaching. I'm currently enrolled in the Full Stack Web Development course at UNC Charlotte Boot Camp, set to receive a certificate in August, 2022 for front and back-end development including HTML5, JavaScript, APIs, and React. I'm excited to apply skills in problem-solving and leadership to software development while continuing to learn and flourish.</p>
+            </div>
+            <div class="col-12 col-md-4">
+                <h3>Technical Skills</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>APIs</li>
+                    <li>Bootstrap</li>
+                </ul>
+            </div>
         </section>
 
         <section class="row" id="projects">
-            <h3>Recent Projects</h3>
-            <div class="row">
-                <h4>Pantry Prepper</h4>
-                <a href="https://github.com/kleylakb89/pantry-prepper" target="_blank">GitHub Repository</a>
-                <a href="https://kleylakb89.github.io/pantry-prepper/" target="_blank" class="w-25"><img src="./assets/images/pantry-prepper-landing-page.png" alt="Pantry Prepper landing page"></a>
-                <h5>What is it?</h5>
-                <p>Working in a team of three, we made a site that generates recipes that include the user's desired ingredient of their choice and the price of the ingredient.</p>
-                <ul>Features include:
-                    <li>
-                        Dynamically updated data fetched from two server-side APIs:
-                        <a href="https://www.themealdb.com/api.php" target="_blank">themealdb</a>
-                        <a href="https://spoonacular.com/food-api" target="_blank">spoonacular</a>
-                    </li>
-                    <li>Usage of HTML, CSS, JavaScript, and Bootstrap</li>
-                    <li>Accepts and responds to user input</li>
-                    <li>Modal to alert user of invalid search</li>
-                    <li>Local storage saves previous searches</li>
-                    <li>UI is responsive to different screen sizes</li>
-                </ul>
+            <h3 class="col-12 text-center">Recent Projects</h3>
+            <div class="row single">
+                <h4 class="col-12 text-center">Pantry Prepper</h4>
+                <a href="https://github.com/kleylakb89/pantry-prepper" target="_blank" class="col-12 text-center git">GitHub Repository</a>
+                <div class="col-12 d-flex text-center container">
+                    <a href="https://kleylakb89.github.io/pantry-prepper/" target="_blank" class="col-12 col-md-6"><img src="./assets/images/pantry-prepper-landing-page.png" alt="Pantry Prepper landing page"></a>
+                    <div class="col-12 col-md-6">
+                        <h5>What is it?</h5>
+                        <p>Working in a team of three, we made a site that generates recipes that include the user's desired ingredient of their choice and the price of the ingredient.</p>
+                        <ul class="outside">Features include:
+                            <li>
+                                Dynamically updated data fetched from two server-side APIs:
+                                <a href="https://www.themealdb.com/api.php" target="_blank">themealdb</a>
+                                <a href="https://spoonacular.com/food-api" target="_blank">spoonacular</a>
+                            </li>
+                            <li>Usage of HTML, CSS, JavaScript, and Bootstrap</li>
+                            <li>Accepts and responds to user input</li>
+                            <li>Modal to alert user of invalid search</li>
+                            <li>Local storage saves previous searches</li>
+                            <li>UI is responsive to different screen sizes</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="row">
-                <h4>Weather Dashboard</h4>
-                <a href="https://github.com/kleylakb89/06-weather-dashboard" target="_blank">GitHub Repository</a>
-                <a href="https://kleylakb89.github.io/06-weather-dashboard/" target="_blank" class="w-25"><img src="./assets/images/weather-dashboard-searched.png" alt="Weather Dashboard landing page"></a>
-                <h5>What is it?</h5>
-                <p>Created web page from scratch to display current and future weather conditions of a city by leveraging OpenWeather APIs.</p>
-                <ul>Features include:
-                    <li>Ability to search for a city, invalid searches will be labelled not found</li>
-                    <li>Displayed name of the city, current date, icon depicting weather, temperature, humidity, wind speed, and UVI</li>
-                    <li>Displayed five day forecast of the next five days, with relevant dates, weather icon, temperatures, wind speed, and humidity</li>
-                    <li>UVI will be color coded based on level (mild - green, medium - orange, severe - red)</li>
-                    <li>Previous searches will be saved to local storage for easy access and displayed on the side of the page</li>
-                    <li>Local storage can be cleared with a button click</li>
-                </ul>
+            <div class="row single">
+                <h4 class="col-12 text-center">Weather Dashboard</h4>
+                <a href="https://github.com/kleylakb89/06-weather-dashboard" target="_blank" class="col-12 text-center git">GitHub Repository</a>
+                <div class="col-12 d-flex text-center container">
+                    <div class="col-12 col-md-6">
+                        <h5>What is it?</h5>
+                        <p>Created web page from scratch to display current and future weather conditions of a city by leveraging OpenWeather APIs.</p>
+                        <ul id="middle">Features include:
+                            <li>Ability to search for a city, invalid searches will be labelled not found</li>
+                            <li>Displayed name of the city, current date, icon depicting weather, temperature, humidity, wind speed, and UVI</li>
+                            <li>Displayed five day forecast of the next five days, with relevant dates, weather icon, temperatures, wind speed, and humidity</li>
+                            <li>UVI will be color coded based on level (mild - green, medium - orange, severe - red)</li>
+                            <li>Previous searches will be saved to local storage for easy access and displayed on the side of the page</li>
+                            <li>Local storage can be cleared with a button click</li>
+                        </ul>
+                    </div>
+                    <a href="https://kleylakb89.github.io/06-weather-dashboard/" target="_blank" class="col-12 col-md-6"><img src="./assets/images/weather-dashboard-searched.png" alt="Weather Dashboard landing page"></a>
+                </div>
             </div>
-            <div>
-                <h4>Work Day Scheduler</h4>
-                <a href="https://github.com/kleylakb89/05-work-schedule" target="_blank">GitHub Repository</a>
-                <a href="https://kleylakb89.github.io/05-work-schedule/" target="_blank"><img src="./assets/images/work-day-scheduler.png" alt="Work Day Scheduler main page"></a>
-                <h5>What is it?</h5>
-                <p>Edited existing code to create a working day planner utilizing jQuery and the Moment.js library.</p>
-                <ul>Features include:
-                    <li>Today's date displayed at the top</li>
-                    <li>Input text areas that save to local storage based on the time slot and display when refreshed</li>
-                    <li>Color-coded time blocks based on the current time. Past times will be colored gray, the present block will be red, and the future blocks will be green.</li>
-                </ul>
+            <div class="row single">
+                <h4 class="col-12 text-center">Work Day Scheduler</h4>
+                <a href="https://github.com/kleylakb89/05-work-schedule" target="_blank" class="col-12 text-center git">GitHub Repository</a>
+                <div class="col-12 d-flex text-center container">
+                    <a href="https://kleylakb89.github.io/05-work-schedule/" target="_blank" class="col-12 col-md-6"><img src="./assets/images/work-day-scheduler.png" alt="Work Day Scheduler main page"></a>
+                    <div class="col-12 col-md-6">
+                        <h5>What is it?</h5>
+                        <p>Edited existing code to create a working day planner utilizing jQuery and the Moment.js library.</p>
+                        <ul class="outside">Features include:
+                            <li>Today's date displayed at the top</li>
+                            <li>Input text areas that save to local storage based on the time slot and display when refreshed</li>
+                            <li>Color-coded time blocks based on the current time. Past times will be colored gray, the present block will be red, and the future blocks will be green.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section class="row" id="contact">
-            <h3>Get In Touch</h3>
+            <h3 class="col-12 text-center">Get In Touch</h3>
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Email address</label>
                 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
@@ -118,8 +136,8 @@
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2022 Kristin Kleyla</p>
+    <footer class="row">
+        <p class="col-12 text-center">&copy; 2022 Kristin Kleyla</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>

@@ -1,9 +1,10 @@
 :root {
     --beige: #ffead0;
-    --teal: #4e8098;
+    --grape: #A393BF;
     --red: #a64253;
     --purple: #2c0e37;
     --sapphire: #1a659e;
+    --shadow: rgba(128, 128, 128, .5);
 }
 
 nav {
@@ -35,6 +36,7 @@ nav a {
 
 header img {
     width: 50%;
+    box-shadow: 6px 6px 6px var(--shadow);
 }
 
 h1 {
@@ -46,4 +48,78 @@ h1 {
     font-family: 'Inconsolata', monospace;
     color: var(--purple);
     font-size: 30px;
+}
+
+h3 {
+    font-family: 'Permanent Marker', cursive;
+    color: var(--purple);
+}
+
+#links div {
+    margin-bottom: 5%;
+}
+
+#links a {
+    text-decoration: none;
+    font-family: 'Dosis', sans-serif;
+    color: var(--purple);
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: var(--sapphire);
+    padding: 8px;
+}
+
+@counter-style arrow {
+    system: cyclic;
+    symbols: "\27A2";
+    suffix: " ";
+}
+
+ul {
+    list-style: arrow;
+    list-style-position: inside;
+}
+
+#about ul {
+    border-left: 2px solid var(--red);
+    border-bottom: 2px solid var(--red);
+}
+
+#about p {
+    border-right: 2px solid var(--red);
+    border-top: 2px solid var(--red);
+}
+
+#projects img {
+    width: 80%;
+    border: 6px solid var(--sapphire);
+}
+
+h4, h5 {
+    font-family: 'Satisfy', cursive;
+}
+
+.single {
+    padding: 16px;
+}
+
+.container {
+    padding: 16px;
+}
+
+.outside {
+    border-left: 2px solid var(--red);
+    border-top: 2px solid var(--red);
+}
+
+#middle {
+    border-right: 2px solid var(--red);
+    border-bottom: 2px solid var(--red);
+}
+
+.git {
+    text-decoration: none;
+    font-family: 'Dosis', sans-serif;
+    color: var(--purple);
+    font-size: 20px;
 }
