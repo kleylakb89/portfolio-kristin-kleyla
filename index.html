@@ -13,12 +13,12 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <nav class="row d-flex justify-content-end align-items-center text-center">
+    <!-- <nav class="row d-flex justify-content-end align-items-center text-center">
         <a href="#links" class="col-12 col-md-1">Links</a>
         <a href="#about" class="col-12 col-md-1">About Me</a>
         <a href="#projects" class="col-12 col-md-1">Projects</a>
         <a href="#contact" class="col-12 col-md-1">Contact</a>
-    </nav>
+    </nav> -->
 
     <header class="row d-flex align-items-center">
         <div class="col-12 col-md-3 offset-md-1">
@@ -55,12 +55,35 @@
                     <li>JavaScript</li>
                     <li>APIs</li>
                     <li>Bootstrap</li>
+                    <li>Express</li>
+                    <li>Handlebars</li>
+                    <li>MySQL</li>
+                    <li>Sequelize</li>
                 </ul>
             </div>
         </section>
 
         <section class="row" id="projects">
             <h3 class="col-12 col-md-6 text-center">Recent Projects</h3>
+            <div class="row single">
+                <h4 class="col-12 text-center">BookNook</h4>
+                <a href="https://github.com/kleylakb89/book-nook" target="_blank" class="col-12 text-center git">GitHub Repository</a>
+                <div class="col-12 d-block d-md-flex text-center container">
+                    <div class="col-12 col-md-6">
+                        <h5>What is it?</h5>
+                        <p>Working in an agile team of five, we created a site that allows users to save books to a personal digital library.</p>
+                        <ul id="middle">Features include:
+                            <li>Login/Logout using express-session</li>
+                            <li>MySQL database utilizing sequelize</li>
+                            <li>Server-side API fetches for ISBNs and book covers</li>
+                            <li>Ability to favorite books or mark them as read</li>
+                            <li>Books grouped by genre</li>
+                            <li>MVC paradigm with tech such as Handlebars, Express, and Bcrypt</li>
+                        </ul>
+                    </div>
+                    <a href="https://dry-bastion-57106.herokuapp.com/" target="_blank" class="col-12 col-md-6"><img src="./assets/images/book-nook.png" alt="BookNook login page"></a>
+                </div>
+            </div>
             <div class="row single">
                 <h4 class="col-12 text-center">Pantry Prepper</h4>
                 <a href="https://github.com/kleylakb89/pantry-prepper" target="_blank" class="col-12 text-center git">GitHub Repository</a>
@@ -85,6 +108,24 @@
                 </div>
             </div>
             <div class="row single">
+                <h4 class="col-12 text-center">Employee Tracker</h4>
+                <a href="https://github.com/kleylakb89/12-employee-tracker" target="_blank" class="col-12 text-center git">GitHub Repository</a>
+                <div class="col-12 d-block d-md-flex text-center container">
+                    <div class="col-12 col-md-6">
+                        <h5>What is it?</h5>
+                        <p>A CLI program that uses Inquirer and MySQL2 to update a database of employees, roles, and managers.</p>
+                        <ul id="middle">Features include:
+                            <li>Ability to view all departments, rolls, managers, employees, employees by manager, employees by department, and department budgets</li>
+                            <li>Ability to add departments, rolls, managers, and employees</li>
+                            <li>Ability to update managers, rolls, and employees</li>
+                            <li>Ability to delete departments, managers, rolls, and employees</li>
+                            <li>Formatted tables display the data</li>
+                        </ul>
+                    </div>
+                    <a href="https://github.com/kleylakb89/12-employee-tracker" target="_blank" class="col-12 col-md-6"><img src="./assets/images/employee-tracker.png" alt="Example of tracker's interface"></a>
+                </div>
+            </div>
+            <!-- <div class="row single">
                 <h4 class="col-12 text-center">Weather Dashboard</h4>
                 <a href="https://github.com/kleylakb89/06-weather-dashboard" target="_blank" class="col-12 text-center git">GitHub Repository</a>
                 <div class="col-12 d-block d-md-flex text-center container">
@@ -102,7 +143,7 @@
                     </div>
                     <a href="https://kleylakb89.github.io/06-weather-dashboard/" target="_blank" class="col-12 col-md-6"><img src="./assets/images/weather-dashboard-searched.png" alt="Weather Dashboard landing page"></a>
                 </div>
-            </div>
+            </div> -->
             <div class="row single">
                 <h4 class="col-12 text-center">Work Day Scheduler</h4>
                 <a href="https://github.com/kleylakb89/05-work-schedule" target="_blank" class="col-12 text-center git">GitHub Repository</a>
